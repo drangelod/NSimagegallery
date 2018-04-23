@@ -1,0 +1,41 @@
+.page-layout {
+  background-color: white;
+}
+.delete-picture-icon {
+  font-size: 15;
+  vertical-align: center;
+  horizontal-align: center;
+}
+.delete-picture-icon-wrapper {
+  background-color: #000000;
+  border-width: 1;
+  border-radius: 8;
+  color: #ffffff;
+  border-color: #ffffff;
+  margin: 15;
+  vertical-align: center;
+  horizontal-align: right;
+  height: 30;
+  width: 60;
+}
+.text-picture {
+  border-width: 1;
+  border-style: solid;
+  border-color: #01060c;
+  height: 80;
+  background-color: rgb(235, 233, 233);
+}
+.section-label {
+  background-color: #292b2b;
+  border-width: 1;
+  border-style: solid;
+  border-color: #01060c;
+  color: white;
+  padding-left: 10;
+  padding-top: 5;
+  padding-bottom: 5;
+}
+.picture-full {
+  border-width: 1;
+  border-color: gray;
+}

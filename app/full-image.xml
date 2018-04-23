@@ -1,0 +1,19 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"  backgroundSpanUnderStatusBar="true"  class="page-layout" navigatingTo="navigatingTo" navigatingFrom="navigatingFrom" >    
+    <ActionBar title="Picture Details">
+        <NavigationButton  text="" android.systemIcon="ic_menu_back" tap="onNavBtnTap"/>
+    </ActionBar>
+    <ScrollView orientation="vertical">
+        <StackLayout>  
+            <Image class="picture-full" id ="fullImage" stretch="aspectFit" src="{{srcPicture}}"  />                                             
+            <GridLayout cols="*,*" rows="60,30,*,300">
+            <StackLayout col="1" row="0" class="delete-picture-icon-wrapper" tap="deletePicture">
+                <Label verticalAlignement="bottom" text="delete" class="delete-picture-icon"></Label>        
+            </StackLayout>
+            <Label col="0" colspan="2" row="1" text="Note:" class="section-label"/>
+            <TextView col="0" colspan="2" row="2" class="text-picture" hint="Add a note for this picture here" id="notePicture" editable="true" text="{{ srcPicture.note }} "/>  
+            <Label col="0" colspan="2" row="3" />
+            </GridLayout>
+        </StackLayout>
+    </ScrollView>
+</Page>
+                

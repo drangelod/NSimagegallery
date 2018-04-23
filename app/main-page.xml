@@ -1,0 +1,21 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" backgroundSpanUnderStatusBar="true"   class="page-layout"  loaded="onLoaded">
+    <ActionBar title="Picture Gallery">        
+    </ActionBar>    
+    <StackLayout>  
+        <Label id="buttonCamera" text="&#xf083;" tap="{{takePicture}}"  class="font-awesome take-picture-icon "></Label>
+            <StackLayout class="h-line"></StackLayout>
+            <ScrollView orientation="vertical">
+            <Repeater id="repeaterObj" items="{{arrayPictures}}">
+                 <Repeater.itemTemplate >
+                    <GridLayout cols="*,100" rows="*" id="gridObj" tap="tapPicture" >                         
+                        <Image class="picture-stack" col="0" colspan="2" row="0" stretch="aspectFit" src="{{$value}}"  />
+                        <StackLayout visibility="{{$value.note.length>0  ? 'visible' : 'hidden'}}" col="0" row="0" class="note-picture-wrapper"  >
+                            <Label  textWrap="true" verticalAlignement="bottom" text="{{$value.note}}" class="note-picture-text"></Label>
+                        </StackLayout>                      
+                    </GridLayout>
+                </Repeater.itemTemplate>
+            </Repeater> 
+        </ScrollView>    
+    </StackLayout>    
+</Page>

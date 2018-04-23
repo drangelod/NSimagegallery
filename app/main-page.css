@@ -1,0 +1,45 @@
+.page-layout {
+  background-color: white;
+}
+.take-picture-icon {
+  horizontal-align: center;
+  background-color: rgb(234, 234, 236);
+  padding: 12;
+  border-width: 1.2;
+  border-color: black;
+  border-radius: 14;
+  margin-top: 20;
+  margin-bottom: 20;
+  color: black;
+  font-size: 30;
+}
+.h-line {
+  height: 1;
+  background-color: black;
+}
+.font-awesome {
+  font-family: "Font Awesome 5 Free", "fa-solid-900", "fa-regular-400",
+    "fa-brands-400";
+}
+.note-picture-wrapper {
+  background-color: #1a1919;
+  opacity: 0.7;
+  border-width: 1;
+  border-radius: 8;
+  color: #ffffff;
+  border-color: #ffffff;
+  margin: 15;
+  vertical-align: bottom;
+  horizontal-align: center;
+}
+.note-picture-text {
+  font-size: 15;
+  vertical-align: center;
+  horizontal-align: center;
+  padding: 4;
+}
+.picture-stack {
+  margin-top: 20;
+  margin-bottom: 12;
+  height: 200;
+}
